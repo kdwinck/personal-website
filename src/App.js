@@ -6,11 +6,12 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <p>
-            Kyle is super cool and you should hire him.
-          </p>
-        </header>
+        <div className="App-header">
+          <h1 className="splash-text">WEB DEVELOPER.</h1>
+        </div>
+        <p>
+          Kyle is super cool and you should hire him.
+        </p>
       </div>
     );
   }
