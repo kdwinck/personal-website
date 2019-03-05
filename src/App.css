@@ -3,7 +3,7 @@
 }
 
 .App-header {
-  background: url(images/splash-asset.jpeg) no-repeat center center;
+  background: url(images/splash-asset.jpg) no-repeat center center;
   -webkit-background-size: contain;
   -moz-background-size: contain;
   -o-background-size: contain;
@@ -12,18 +12,95 @@
   height: 0;
   padding-top: 56.9%;
   margin-top: -1px;
+  text-align: center;
   position: relative;
 }
 
 .splash-text {
   position: absolute;
-  top: 20%;
-  right: 10%;
-  font-size: 4.5vw;
+  top: 39%;
+  vertical-align: middle;
+  margin: auto;
+  width: 100%;
+  font-size: 6vw;
   font-family: tahoma;
+  color: #fff;
 }
 
-@media only screen and (max-device-width: 375px) {
+.blurb-one {
+  position: absolute;
+  top: 15%;
+  left: 10%;
+  font-size: 1.5vw;
+  font-family: tahoma;
+  color: #fff;
+}
+
+.blurb-two {
+  position: absolute;
+  top: 25%;
+  right: 10%;
+  font-size: 1.5vw;
+  font-family: tahoma;
+  color: #fff;
+}
+
+.blurb-three {
+  position: absolute;
+  top: 75%;
+  right: 30%;
+  font-size: 1.5vw;
+  font-family: tahoma;
+  color: #fff;
+}
+
+@keyframes flickerAnimation {
+  0%   { opacity:0; }
+  50%  { opacity:1; }
+  100% { opacity:0; }
+}
+
+@-o-keyframes flickerAnimation{
+  0%   { opacity:0; }
+  50%  { opacity:1; }
+  100% { opacity:0; }
+}
+
+@-moz-keyframes flickerAnimation{
+  0%   { opacity:0; }
+  50%  { opacity:1; }
+  100% { opacity:0; }
+}
+
+@-webkit-keyframes flickerAnimation{
+  0%   { opacity:0; }
+  50%  { opacity:1; }
+  100% { opacity:0; }
+}
+
+.blurb-one {
+   -webkit-animation: flickerAnimation 10s infinite;
+   -moz-animation: flickerAnimation 10s infinite;
+   -o-animation: flickerAnimation 10s infinite;
+    animation: flickerAnimation 10s infinite;
+}
+
+.blurb-two {
+   -webkit-animation: flickerAnimation 3s infinite;
+   -moz-animation: flickerAnimation 3s infinite;
+   -o-animation: flickerAnimation 3s infinite;
+    animation: flickerAnimation 3s infinite;
+}
+
+
+.blurb-three {
+   -webkit-animation: flickerAnimation 5s infinite;
+   -moz-animation: flickerAnimation 5s infinite;
+   -o-animation: flickerAnimation 5s infinite;
+    animation: flickerAnimation 5s infinite;
+}
+
+/* @media only screen and (max-device-width: 375px) {
   .App-header {
     height: 214px;
   }
@@ -33,4 +110,4 @@
   .App-header {
     height: 436px;
   }
-}
+} */
