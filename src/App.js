@@ -3,8 +3,11 @@ import { BrowserRouter as Router , Route, Link } from 'react-router-dom';
 
 import About from './containers/about';
 import Home from './containers/home';
+import Contact from './containers/contact';
+import Projects from './containers/projects';
+import Resume from './containers/resume';
 
-import logo from './logo.svg';
+
 import './App.css';
 
 class App extends Component {
@@ -21,7 +24,7 @@ class App extends Component {
                 <Link to="/about">About</Link>
               </li>
               <li>
-                <Link to="/topics">Resume</Link>
+                <Link to="/resume">Resume</Link>
               </li>
               <li>
                 <Link to="/projects">Projects</Link>
@@ -33,9 +36,9 @@ class App extends Component {
           </navbar>
           <Route exact path="/" component={Home} />
           <Route path="/about" component={About} />
-          {/* <Route path="/topics" component={Resume} /> */}
-          {/* <Route exact path="/" component={Projects} /> */}
-          {/* <Route path="/about" component={Contact} /> */}
+          <Route path="/resume" component={Resume} />
+          <Route path="/projects" component={Projects} />
+          <Route path="/contact" component={Contact} />
         </Router>
       </div>
     );
