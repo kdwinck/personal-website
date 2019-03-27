@@ -129,14 +129,16 @@ navbar a:hover {
     animation: flickerAnimation 5s infinite;
 }
 
-/* @media only screen and (max-device-width: 375px) {
-  .App-header {
-    height: 214px;
-  }
+.movieButton {
+  position: absolute;
+  background: transparent;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  left: 1vw;
+  bottom: 1vw;
+  font-size: 1vw;
 }
 
-@media only screen and (max-device-width: 1024px) {
-  .App-header {
-    height: 436px;
-  }
-} */
+.movieButton:hover {
+  background-color: #fff;
+}
