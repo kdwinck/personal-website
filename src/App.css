@@ -134,11 +134,15 @@ navbar a:hover {
   background: transparent;
   border: 1px solid #fff;
   border-radius: 3px;
-  left: 1vw;
-  bottom: 1vw;
+  height: 1.5vw;
+  z-index: 11;
+  top: .5vw;
+  left: .5vw;
+  color: #fff;
   font-size: 1vw;
 }
 
 .movieButton:hover {
   background-color: #fff;
+  color: #000;
 }

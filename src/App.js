@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router , Route, Link } from 'react-router-dom';
 
 import About from './containers/about';
-import Home from './containers/home';
+import Home from './containers/homePage/home';
 import Contact from './containers/contact';
 import Projects from './containers/projects';
 import Resume from './containers/resume';
