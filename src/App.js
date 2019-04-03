@@ -15,7 +15,7 @@ class App extends Component {
     return (
       <div className="App">
         <Router>
-          <navbar>
+          <nav>
             <ul>
               <li>
                 <Link to="/">Home</Link>
@@ -33,7 +33,7 @@ class App extends Component {
                 <Link to="/contact">Contact</Link>
               </li>
             </ul>
-          </navbar>
+          </nav>
           <Route exact path="/" component={Home} />
           <Route path="/about" component={About} />
           <Route path="/resume" component={Resume} />

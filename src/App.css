@@ -1,4 +1,11 @@
-navbar {
+html,
+body {
+  font-family: tahoma;
+  background-color: #F0F0F0;
+}
+
+/********** navbar styles **********/
+nav {
   z-index: 10;
   position: absolute;
   top: 0;
@@ -8,25 +15,26 @@ navbar {
   align-items: center;
 }
 
-navbar ul {
+nav ul {
   margin: 0;
 }
 
-navbar li {
+nav li {
   display: inline;
   padding-right: 1.5vw;
   font-size: 2vw;
 }
 
-navbar a {
+nav a {
   text-decoration: none;
   color: #000;
 }
 
-navbar a:hover {
+nav a:hover {
   text-decoration: underline;
 }
 
+/********** Home page styles **********/
 .App {
   text-align: center;
 }
@@ -37,8 +45,7 @@ navbar a:hover {
   -moz-background-size: contain;
   -o-background-size: contain;
   background-size: contain;
-  width: 100%;
-  height: 0;
+  max-width: 100%;
   padding-top: 56.9%;
   margin-top: -1px;
   text-align: center;
@@ -52,7 +59,6 @@ navbar a:hover {
   margin: auto;
   width: 100%;
   font-size: 6vw;
-  font-family: tahoma;
   color: #fff;
 }
 
@@ -61,7 +67,6 @@ navbar a:hover {
   top: 15%;
   left: 10%;
   font-size: 1.5vw;
-  font-family: tahoma;
   color: #fff;
 }
 
@@ -70,7 +75,6 @@ navbar a:hover {
   top: 25%;
   right: 10%;
   font-size: 1.5vw;
-  font-family: tahoma;
   color: #fff;
 }
 
@@ -79,7 +83,6 @@ navbar a:hover {
   top: 75%;
   right: 30%;
   font-size: 1.5vw;
-  font-family: tahoma;
   color: #fff;
 }
 
@@ -145,4 +148,49 @@ navbar a:hover {
 .movieButton:hover {
   background-color: #fff;
   color: #000;
+}
+
+/********** Contact page styles **********/
+.contact-header {
+  margin-top: 10vw;
+  font-size: 5vw;
+}
+
+.contact-text {
+  width: 50%;
+  margin: auto;
+}
+
+#contact-form {
+  margin: 5vw auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  text-align: left;
+}
+
+#contact-form label {
+  margin-bottom: .5vw;
+}
+
+#contact-form input {
+  height: 24px;
+  margin-bottom: 2vw;
+  font-size: 1.5vw;
+}
+
+#contact-form textarea {
+  margin-bottom: 2vw;
+  font-size: 1.5vw;
+}
+
+#contact-form textarea {
+  resize: none;
+  height: 15vw;
+}
+
+#contact-submit {
+  border: none;
+  border-radius: 3px;
+  font-size: 2vw;
 }
