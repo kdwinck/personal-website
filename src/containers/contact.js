@@ -13,7 +13,7 @@ class Contact extends Component {
           <label>Email*</label>
           <input type="email" name="user_email" required />
           <label>Message*</label>
-          <textarea name="text"></textarea>
+          <textarea name="text" required></textarea>
           <input id="contact-submit" type="submit" value="Send Message" />
         </form>
       </div>

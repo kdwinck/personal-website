@@ -5,7 +5,7 @@ import About from './containers/about';
 import Home from './containers/homePage/home';
 import Contact from './containers/contact';
 import Projects from './containers/projects';
-import Resume from './containers/resume';
+import Resume from './containers/resume/resume';
 
 
 import './App.css';

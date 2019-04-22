@@ -22,7 +22,7 @@ nav ul {
 nav li {
   display: inline;
   padding-right: 1.5vw;
-  font-size: 2vw;
+  font-size: 1.5vw;
 }
 
 nav a {
@@ -152,17 +152,17 @@ nav a:hover {
 
 /********** Contact page styles **********/
 .contact-header {
-  margin-top: 10vw;
-  font-size: 5vw;
+  margin-top: 6vw;
+  font-size: 4vw;
 }
 
 .contact-text {
   width: 50%;
-  margin: auto;
+  margin: .5vw auto;
 }
 
 #contact-form {
-  margin: 5vw auto 0 auto;
+  margin: 2vw auto 0 auto;
   display: flex;
   flex-direction: column;
   width: 40%;
@@ -170,12 +170,12 @@ nav a:hover {
 }
 
 #contact-form label {
-  margin-bottom: .5vw;
+  margin-bottom: .3vw;
 }
 
 #contact-form input {
   height: 24px;
-  margin-bottom: 2vw;
+  margin-bottom: 1.5vw;
   font-size: 1.5vw;
 }
 
@@ -193,4 +193,7 @@ nav a:hover {
   border: none;
   border-radius: 3px;
   font-size: 2vw;
+  background-color: darkslategrey;
+  color: #fff;
+  cursor: pointer;
 }
