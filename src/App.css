@@ -150,6 +150,12 @@ nav a:hover {
   color: #000;
 }
 
+/********** Resume page styles **********/
+.resume-div {
+  margin-top: 25px;
+  min-width: 485px;
+}
+
 /********** Contact page styles **********/
 .contact-header {
   margin-top: 6vw;

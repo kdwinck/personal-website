@@ -3,8 +3,16 @@ import React, { Component } from 'react';
 class Resume extends Component {
   render() {
     return (
-      <h1>This is the Resume page</h1>
-    )
+      <div class="resume-div">
+        <iframe 
+                className="resume-iframe"
+                title="resume"
+                src="https://drive.google.com/file/d/1Vi_T60bp8eOXNzCWOqXA0XjstzCzX26O/preview" 
+                width="100%" 
+                height="900px">
+        </iframe>      
+      </div>
+    );
   }
 }
 
